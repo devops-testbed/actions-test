@@ -1,0 +1,18 @@
+name: base64-encoded-artifact
+on:
+  push: {}
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: python3 test.py > output.log
+    - name: Encode output.log to base64
+        run: base64 output.log > output_base64.log
+      - name: Upload output.log as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: output_base64
+          path: |
+            output.log
+            output_base64.log
