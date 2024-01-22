@@ -1,5 +1,8 @@
 # GitHub Actions Workflow Testing
 [![debug](https://github.com/devops-testbed/actions-test/actions/workflows/latest.yml/badge.svg)](https://github.com/devops-testbed/actions-test/actions/workflows/latest.yml)
+[![base64-encoded-artifact](https://github.com/devops-testbed/actions-test/actions/workflows/base64.yml/badge.svg)](https://github.com/devops-testbed/actions-test/actions/workflows/base64.yml)
+[![Test](https://github.com/devops-testbed/actions-test/actions/workflows/test.yml/badge.svg)](https://github.com/devops-testbed/actions-test/actions/workflows/test.yml)
+
 
 
 This repository is set up to test GitHub Actions workflows using a Python script.
