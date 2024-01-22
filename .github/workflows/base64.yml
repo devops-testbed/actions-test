@@ -2,7 +2,7 @@ name: base64-encoded-artifact
 on:
   push: {}
 jobs:
-  test:
+  encode-long-lines:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
