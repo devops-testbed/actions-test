@@ -1,0 +1,15 @@
+name: Test
+on:
+  push: {}
+jobs:
+  test:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    #runs-on: ["self-hosted", "huge"]
+    container:
+      image: alpine:3.10
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: apk add python3
+      - run: python3 test.py
