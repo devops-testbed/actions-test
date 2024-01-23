@@ -7,6 +7,8 @@
 
 This repository is set up to test GitHub Actions workflows using a Python script.
 
+For Issue: https://github.com/actions/runner/issues/1031
+
 ## Python Script
 
 The Python script [test.py](test.py) generates messages of varying lengths and prints them along with the current timestamp. The lengths of the messages are defined in the `lens` list.
